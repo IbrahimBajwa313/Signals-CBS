@@ -4,9 +4,14 @@ import Link from "next/link";
 
 const IntroCard = () => {
   const phoneNumber = "+923325900041";
-  const message = "I would like to donate to Gaza through SGC.";
+  const message = "AsslamoAlikum! I am contacting you through SGC Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
+  )}`;
+
+  const message2 = "AsslamoAlikum! I am contacting you through SGC Site. I want to adopt a child. Please tell me the procedure.";
+  const whatsappLink2 = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message2
   )}`;
 
   return (
@@ -37,9 +42,9 @@ const IntroCard = () => {
                 </button>
               </a>
             </Link>
-            <Link href={whatsappLink} passHref>
+            <Link href={whatsappLink2} passHref>
               <button className="text-lg md:text-xl font-bold bg-transparent border-2 border-white px-6 md:px-8 py-3 md:py-4 rounded-full text-white hover:bg-[#D0312D] hover:text-[#fff] hover:border-[#D0312D] transition-all ease-in-out duration-200">
-                Connect with a Family
+                Adoppt a Child
               </button>
             </Link>
           </div>
