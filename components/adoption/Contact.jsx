@@ -2,9 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 const Contact = () => {
-  const phoneNumber = "+923325900041";
-  const message =
-    "AoA, I would like to virtually adopt a child orphaned in GAZA.";
+  const phoneNumber = "+923325000418";
+  const message = "AsslamoAlikum! I am contacting you through SGC Site. I want to adopt a child. Please tell me the procedure.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
@@ -22,7 +21,7 @@ const Contact = () => {
           />
           <div className="text-center md:text-left">
             <p className="text-xl md:text-3xl font-semibold">Contact Now</p>
-            <p className="text-lg md:text-xl tracking-wide">+92 332 5900041</p>
+            <p className="text-lg md:text-xl tracking-wide">+9233-25000418</p>
           </div>
         </div>
       </a>

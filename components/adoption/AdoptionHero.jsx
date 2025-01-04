@@ -35,7 +35,7 @@ const AdoptionHero = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <p>Adopt</p>
+            <p>Adopt a Child</p>
           </button>
         </Link>
       </div>
