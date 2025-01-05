@@ -21,7 +21,7 @@ const HowItWorks = () => {
                   Contact
                 </h3>
                 <p className="text-gray-600">
-                  Contact us through whatsapp by clicking on the button below or
+                  Fill the form and contact us through whatsapp by clicking on the button below or
                   by usong our number.
                 </p>
               </div>
