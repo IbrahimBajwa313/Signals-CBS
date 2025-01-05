@@ -19,57 +19,83 @@ const AdoptionForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4">Get Involved</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block text-gray-700">Name</label>
+    <div id="form">
+    <div className="mb-8 text-center flex flex-col justify-center items-center gap-2">
+      <h2 className="text-4xl font-bold text-[#22C55E] ">
+        Subscription Form
+      </h2>
+      <p className="text-gray-600 font-light">Fill the form to Subscribe</p>
+    </div>
+    <div className="bg-white p-8 rounded-2xl shadow-lg max-w-lg mx-auto w-[100%]">
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div>
+          <label className="block text-gray-700 font-medium mb-2">Name</label>
           <input
             type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="w-full p-3 border border-gray-300 rounded-lg text-black placeholder-gray-300"
+            placeholder="Enter your name"
             required
           />
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Phone Number</label>
-          <input
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Address</label>
+        <div>
+          <label className="block text-gray-700 font-medium mb-2">
+             Phone Number
+          </label>
           <input
             type="text"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            name="contact"
+            value={formData.contact}
+            onChange={handleChange}
+            className="w-full p-3 border border-gray-300 rounded-lg text-black placeholder-gray-300"
+            placeholder="Enter your contact number"
             required
           />
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">How will you be helping?</label>
-          <textarea
-            value={helpMessage}
-            onChange={(e) => setHelpMessage(e.target.value)}
-            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-            rows="4"
+        <div>
+          <label className="block text-gray-700 font-medium mb-2">
+             Address
+          </label>
+          <input
+            type="text"
+            name="contact"
+            value={formData.contact}
+            onChange={handleChange}
+            className="w-full p-3 border border-gray-300 rounded-lg text-black placeholder-gray-300"
+            placeholder="Enter your contact number"
+            required
+          />
+        </div>
+        <div>
+          <label className="block text-gray-700 font-medium mb-2">
+            How much you can monthly donate
+          </label>
+          <input
+            type="text"
+            name="contact"
+            value={formData.contact}
+            onChange={handleChange}
+            className="w-full p-3 border border-gray-300 rounded-lg text-black placeholder-gray-300"
+            placeholder="Enter your contact number"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-full bg-green-500 text-white font-bold py-2 rounded-md hover:bg-green-600 transition duration-200"
+          className="w-full bg-[#22C55E] text-white p-3 rounded-lg hover:bg-[#1da44e] transition"
         >
           Submit
         </button>
       </form>
+      {submitted && (
+        <p className="mt-4 text-green-600 text-center">
+          Submitted successfully. <br /> We will get back to you.
+        </p>
+      )}
     </div>
+  </div>
   );
 };
 

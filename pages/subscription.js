@@ -3,7 +3,7 @@ import SubscriptionHeading from "@/components/subscription/SubscriptionHeading";
 import OurGoal from "@/components/subscription/OurGoal";
 import HelpCounter from "@/components/subscription/HelpCounter";
 import HowItWorks from "@/components/subscription/HowItWorks";
-import Form from "@/components/subscription/Form";
+import MonthlyForm from "@/components/subscription/Form";
 import { activitiesData } from "@/data/activitiesData";
 import Contact from "@/components/adoption/Contact";
 import AdoptionForm from "@/components/adoption/adoptionForm";
@@ -16,7 +16,7 @@ export default function Home() {
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         <OurGoal />
         <HowItWorks />
-        <AdoptionForm />
+        <MonthlyForm />
         <Contact />
 
       </Wrapper>

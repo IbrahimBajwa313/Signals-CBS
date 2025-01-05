@@ -42,21 +42,21 @@ const Form = () => {
           </div>
           <div>
             <label className="block text-gray-700 font-medium mb-2">
-              Email
+               Phone Number
             </label>
             <input
-              type="email"
-              name="email"
-              value={formData.email}
+              type="text"
+              name="contact"
+              value={formData.contact}
               onChange={handleChange}
               className="w-full p-3 border border-gray-300 rounded-lg text-black placeholder-gray-300"
-              placeholder="Enter your email"
+              placeholder="Enter your contact number"
               required
             />
           </div>
           <div>
             <label className="block text-gray-700 font-medium mb-2">
-              Contact
+              How much you can monthly donate
             </label>
             <input
               type="text"
