@@ -143,24 +143,25 @@ const HowItWorks = () => {
         <div className="flex flex-col justify-center items-start gap-2 text-black">
           <h3 className="text-xl font-semibold">Step 1:</h3>
           <p className="">
-            Any money donated to SGC will be directly used for assistance and
-            monetary help of Gazans and in no way will be used on campaign.
+          Fill the Form to provide us with your details. This will help
+          us in contacting you and sending Monthly reminders.
           </p>
         </div>
         <hr className="border-2 border-[#22C55E] w-5/6"></hr>
         <div className="flex flex-col justify-center items-start gap-2 text-black">
           <h3 className="text-xl font-semibold">Step 2:</h3>
           <p className="">
-            Any money donated to SGC will be directly used for assistance and
-            monetary help of Gazans and in no way will be used on campaign.
+          Once you have made your monthly donation, please send us the
+                  receipt in the form of a screenshot on WhatsApp. This helps us
+                  keep track of donations and provide you with updates.
           </p>
         </div>
         <hr className="border-2 border-[#22C55E] w-5/6"></hr>
         <div className="flex flex-col justify-center items-start gap-2 text-black">
           <h3 className="text-xl font-semibold">Step 3:</h3>
           <p className="">
-            Any money donated to SGC will be directly used for assistance and
-            monetary help of Gazans and in no way will be used on campaign.
+          Our team will reach out to you on the 5th of every month to
+          provide you updates and remind you of your monthly donation.
           </p>
         </div>
         <h4 className="text-sm font-light text-gray-400 text-center">
