@@ -85,7 +85,7 @@ const AdoptionForm = () => {
             />
           </div>
           <div>
-            <label className="block text-gray-700 font-medium mb-2">How much you can donate for a child monthly</label>
+            <label className="block text-gray-700 font-medium mb-2">How much you can donate for a child on monthly basis?</label>
             <input
               type="text"
               name="donationAmount"
