@@ -29,13 +29,16 @@ export default function App({ Component, pageProps }) {
     }
   }, []);
 
-  const [subTotal, setSubTotal] = useState(0);
+  const phoneNumber = "923325000418"; 
+  const message = "AsslamoAlikum! I am contacting you through SGC Site. I want to donate for Gaza.";
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
 
   return (
     <>
       <Link
-        href="https://wa.me/923325000418" // Replace with the actual WhatsApp number
-        className="fixed bottom-14 left-2  rounded-full bg-white/[0.25] text-green-500 duration-200 hover:scale-110 cursor-pointer"
+        href={whatsappLink} // Use the whatsappLink variable
+        className="fixed bottom-14 left-2 rounded-full bg-white/[0.25] text-green-500 duration-200 hover:scale-110 cursor-pointer"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -52,7 +55,6 @@ export default function App({ Component, pageProps }) {
       </Headroom>
 
       <Component {...pageProps} />
-      
 
       <Footer2 />
     </>
