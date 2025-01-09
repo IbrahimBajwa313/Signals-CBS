@@ -71,24 +71,32 @@ export default function Header() {
         <nav className="flex items-center space-x-8">
           {/* Navigation Links */}
           <span className="hidden md:flex items-center space-x-8">
+            <Link
+              href="https://savegazacampaign.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
+                SGC Main Site
+              </span>{" "}
+            </Link>
+            <Link
+              href="https://www.savegazacampaign.org/about"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
+                About Us
+              </span>{" "}
+            </Link>
             <Link href="#">
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                Latest
+                Gaza Activities
               </span>
             </Link>
             <Link href="#">
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                Modern
-              </span>
-            </Link>
-            <Link href="#">
-              <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                Contemporary
-              </span>
-            </Link>
-            <Link href="#">
-              <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                Affordable
+                Donate Now
               </span>
             </Link>
           </span>
