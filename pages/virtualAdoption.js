@@ -5,7 +5,7 @@ import HowItWorks from "@/components/adoption/HowItWorks";
 import Contact from "@/components/adoption/Contact";
 import Form from "@/components/subscription/Form";
 import { activitiesData } from "@/data/activitiesData";
-import AdoptionForm from "@/components/adoption/adoptionForm";
+import AdoptionForm from "@/components/adoption/AdoptionForm";
 
 export default function Home() {
   return (
