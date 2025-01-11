@@ -22,7 +22,7 @@ const Form = () => {
     <div id="form">
       <div className="mb-8 text-center flex flex-col justify-center items-center gap-2">
         <h2 className="text-4xl font-bold text-[#22C55E] ">
-          Subscription Form
+          Monthly Subscription Form
         </h2>
         <p className="text-gray-600 font-light">Fill the form to Subscribe</p>
       </div>

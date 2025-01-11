@@ -2,8 +2,7 @@ import Wrapper from "@/components/Wrapper";
 import SubscriptionHeading from "@/components/subscription/SubscriptionHeading";
 import OurGoal from "@/components/subscription/OurGoal";
 import HelpCounter from "@/components/subscription/HelpCounter";
-import HowItWorks from "@/components/subscription/HowItWorks";
-import Form from "@/components/subscription/Form"; 
+import HowItWorks from "@/components/subscription/HowItWorks"; 
 import Contact from "@/components/adoption/Contact"; 
 
 export default function Home() {
@@ -13,10 +12,8 @@ export default function Home() {
       <HelpCounter />
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         <OurGoal />
-        <HowItWorks />
-        <Form />
+        <HowItWorks /> 
         <Contact />
-
       </Wrapper>
     </main>
   );

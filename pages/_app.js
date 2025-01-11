@@ -8,6 +8,7 @@ import Head from "next/head";
 import { useState, useEffect, createContext, useContext } from "react";
 import Headroom from "react-headroom";
 import Chatbot from "@/components/Chatbot";
+import { Analytics } from "@vercel/analytics/react"
 
 export const productInfo = createContext();
 
