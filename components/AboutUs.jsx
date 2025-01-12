@@ -39,13 +39,13 @@ export default function AboutUs() {
                 Join Us in Making a Difference!
               </p>
 
-              <Link href="">
+              <Link href="/about">
                 <div
                   className="text-sm md:text-lg flex flex-row gap-4 w-full md:w-48 justify-center items-center p-3 py-2 md:p-4 rounded-full mt-4 md:mt-0 ml-auto font-semibold bg-[#22C55E] text-white hover:bg-[#D0312D] hover:text-[#fff] transition-all ease-in-out duration-200"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
-                  <p>Join Now</p>
+                  <p>About Us</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -96,7 +96,7 @@ export default function AboutUs() {
                 Check out our activities in Gaza!
               </p>
 
-              <Link href="#activities">
+              <Link href="https://sgc-blogs-3.vercel.app/category/6762389a587d34c99391e320">
                 <div
                   className="text-sm md:text-base flex flex-row gap-4 justify-center items-center px-8 py-4  bg-[#22C55E] text-white rounded-full mt-4 font-semibold hover:bg-[#D0312D] hover:text-[#fff] transition-all ease-in-out duration-200"
                   style={{
