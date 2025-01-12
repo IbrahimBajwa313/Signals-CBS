@@ -9,16 +9,17 @@ export default function Collab() {
         <div className="flex flex-col justify-between items-center p-6 md:p-10 md:px-20 bg-white rounded-[2rem] text-black gap-6 md:gap-10">
           <p className="text-sm md:text-lg">
             We are collaborating with{" "}
-            <span className="font-semibold">Shab-e-AbiTalib</span> and{" "}
-            <span className="font-semibold">Friends of Palestine</span> to
-            provide critical aid to the people of Gaza. Our primary role is to
+            <span className="font-semibold">Shab-e-AbiTalib</span>
+             {/* and{" "}
+            <span className="font-semibold">Friends of Palestine</span>  */}
+            to provide critical aid to the people of Gaza. Our primary role is to
             raise and collect funds, which are then directed to our trusted
             partners actively working on the ground to deliver essential
             assistance. We are committed to doing everything in our power to
             support this vital cause.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-6 md:gap-0 px-0 md:px-20">
-            <span className="rounded-full border-4 border-[#22C55E] ">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-6 md:gap-0 px-0 md:px-48">
+            {/* <span className="rounded-full border-4 border-[#22C55E] ">
               <Image
                 src="/fop.jpg"
                 width={180}
@@ -42,7 +43,7 @@ export default function Collab() {
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </span>
+            </span> */}
             <span className="rounded-full border-4 border-[#22C55E] p-2">
               <Image
                 src="/save-gaza-logo.png"
