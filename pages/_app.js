@@ -8,7 +8,7 @@ import Head from "next/head";
 import { useState, useEffect, createContext, useContext } from "react";
 import Headroom from "react-headroom";
 import Chatbot from "@/components/Chatbot";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 export const productInfo = createContext();
 
@@ -30,10 +30,12 @@ export default function App({ Component, pageProps }) {
     }
   }, []);
 
-  const phoneNumber = "923325000418"; 
-  const message = "AsslamoAlikum! I am contacting you through SGC Site. I want to donate for Gaza.";
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    
+  const phoneNumber = "923325000418";
+  const message =
+    "AsslamoAlikum! I am contacting you through SGC Site. I want to donate for Gaza.";
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
 
   return (
     <>
@@ -48,7 +50,7 @@ export default function App({ Component, pageProps }) {
 
       <Head>
         <link rel="icon" href="/save-gaza-logo.png" />
-        <title>SGC Relief Activities</title>
+        <title>Signals CBS</title>
       </Head>
 
       <Headroom>

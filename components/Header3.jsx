@@ -5,7 +5,8 @@ import Image from "next/image";
 
 export default function Header() {
   const phoneNumber = "+923325000418";
-  const message = "AsslamoAlikum! I am contacting you through SGC Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
+  const message =
+    "AsslamoAlikum! I am contacting you through SGC Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
@@ -32,11 +33,16 @@ export default function Header() {
   const handleToggle = () => {
     setIsToggled(!isToggled);
   };
- 
-    
-    const items2 = ["About", "SGC Main Site", "Gaza Activities"];
-  const list2 = items2.map((item, index, url) => {
-    return <ListItem key={index} itemName={item} url={url} />;
+
+  const items2 = [
+    { name: "About", url: "/about" },
+    { name: "Events", url: "/events" },
+    { name: "Blog", url: "/blog" },
+    { name: "Contact", url: "/contact" },
+  ];
+
+  const list2 = items2.map((item, index) => {
+    return <ListItem key={index} itemName={item.name} url={item.url} />;
   });
 
   return (
@@ -46,8 +52,9 @@ export default function Header() {
       }`}
     >
       <div className="flex justify-between items-center">
+        {/* Logo */}
         <div className="flex items-center space-x-4">
-        <Link href={"/"}>
+          <Link href={"/"}>
             <div className="flex items-center space-x-4">
               <Image
                 src="/save-gaza-logo.png"
@@ -57,49 +64,46 @@ export default function Header() {
                 width={48}
               />
               <span className="text-1xl md:text-2xl font-bold hover:text-gray-500">
-              SGC Relief Activities
+                Signals CBS
               </span>
             </div>
           </Link>
         </div>
 
+        {/* Navbar */}
         <nav className="flex items-center space-x-8">
           {/* Navigation Links */}
           <span className="hidden md:flex items-center space-x-8">
-
-            <Link href="/about" >
+            <Link href="/about">
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                About 
+                About
+              </span>{" "}
+            </Link>
+
+            <Link href="/events">
+              <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
+                Events
               </span>{" "}
             </Link>
 
             <Link
-              href="https://savegazacampaign.org"
+              // href="https://sgc-blogs-3.vercel.app/category/6762389a587d34c99391e320" Add link to blog once available
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                SGC Main Site
-              </span>{" "}
-            </Link>
-
-            <Link href="https://sgc-blogs-3.vercel.app/category/6762389a587d34c99391e320"
-            target="_blank"
-            rel="noopener noreferrer">
-              <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                Gaza Activities
+                Blog
               </span>
             </Link>
- 
+
+            <Link href="/contact">
+              <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
+                Contact
+              </span>{" "}
+            </Link>
           </span>
 
-          {/* Login Button */}
-          <Link href={whatsappLink} legacyBehavior target="_blank" rel="noopener noreferrer">
-          <button className="hidden md:flex bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md transition-colors duration-300">
-              Donate Now
-          </button>
-          </Link>
- 
           <span
             className={`mr-2 cursor-pointer flex md:hidden ${
               isIconClicked2
@@ -121,6 +125,17 @@ export default function Header() {
             </svg>
           </span>
         </nav>
+        {/* Join Us Button */}
+        <Link
+          href={whatsappLink}
+          legacyBehavior
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="hidden md:flex bg-white hover:bg-green-500 hover:text-white rounded-full text-black px-6 py-2  transition-colors duration-300">
+            Join Us
+          </button>
+        </Link>
       </div>
 
       <div
@@ -148,8 +163,7 @@ export default function Header() {
           <div
             onClick={handleToggle}
             className="flex items-center cursor-pointer"
-          >
-          </div> 
+          ></div>
         </div>
       </div>
     </header>
