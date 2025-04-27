@@ -5,7 +5,7 @@ const FerrisWheel = () => {
     <div className="flex justify-center relative">
       {/* CENTER IMAGE (STAYS STILL) */}
       <img
-        src="/home/mcs-logo.jpg"
+        src="/logo-main.jpg"
         alt="Center Logo"
         className="absolute left-1/2 top-1/2 
                     -translate-x-1/2 -translate-y-1/2 

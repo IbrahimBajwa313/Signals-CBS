@@ -7,6 +7,7 @@ import Services2 from "@/components/Services2";
 import AboutUs from "@/components/AboutUs";
 import FAQs from "@/components/FAQs";
 import Collabrators from "@/components/Collabrators";
+import Objectives from "@/components/home/Objectives";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -17,6 +18,7 @@ export default function Home() {
     <main className="overflow-hidden w-[100%] z-20">
       <IntroCard />
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
+        <Objectives />
         <AboutUs />
         <Services2 />
         <Collabrators />

@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blackText: "#1a1a1a",
       },
       keyframes: {
         scaleUpDown: {

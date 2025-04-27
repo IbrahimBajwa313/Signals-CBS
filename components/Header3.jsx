@@ -57,7 +57,7 @@ export default function Header() {
           <Link href={"/"}>
             <div className="flex items-center space-x-4">
               <Image
-                src="/save-gaza-logo.png"
+                src="/logo-main.jpg"
                 alt="Save Gaza Campaign Logo"
                 className="h-12 w-12"
                 height={48}
