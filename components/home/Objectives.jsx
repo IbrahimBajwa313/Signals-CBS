@@ -40,7 +40,7 @@ const Objectives = () => {
             <h3 className="text-2xl font-semibold mb-4 text-green-600">
               {obj.title}
             </h3>
-            <p className="text-gray-600">{obj.text}</p>
+            <p className="text-gray-600 ">{obj.text}</p>
           </div>
         ))}
       </div>

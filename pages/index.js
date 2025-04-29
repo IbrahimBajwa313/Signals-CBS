@@ -8,6 +8,8 @@ import AboutUs from "@/components/AboutUs";
 import FAQs from "@/components/FAQs";
 import Collabrators from "@/components/Collabrators";
 import Objectives from "@/components/home/Objectives";
+import CBSActivitiesDesktop from "@/components/home/CBSActivitiesDesktop";
+import CBSActivitiesMobile from "@/components/home/CBSActivitiesMobile";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -19,6 +21,8 @@ export default function Home() {
       <IntroCard />
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         <Objectives />
+        <CBSActivitiesDesktop />
+        <CBSActivitiesMobile />
         <AboutUs />
         <Services2 />
         <Collabrators />
