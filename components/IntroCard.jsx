@@ -17,7 +17,7 @@ const IntroCard = () => {
       // style={{ backgroundImage: "url('/banner.jpg')" }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      <div className="absolute inset-0 bg-black "></div>
       {/* Content Section */}
       <div className="relative flex flex-col items-center md:flex-row md:items-center md:justify-between justify-center h-full text-white px-6 md:px-24">
         {/* Text Section */}

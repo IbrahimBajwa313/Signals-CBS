@@ -23,12 +23,12 @@ export default function Home() {
         <Objectives />
         <CBSActivitiesDesktop />
         <CBSActivitiesMobile />
-        <AboutUs />
-        <Services2 />
-        <Collabrators />
-        <FAQs />
+        {/* <AboutUs /> */}
+        {/* <Services2 /> */}
+        {/* <Collabrators /> */}
+        {/* <FAQs /> */}
       </Wrapper>
-      <HelpCounter />
+      {/* <HelpCounter /> */}
     </main>
   );
 }
