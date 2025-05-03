@@ -28,19 +28,19 @@ const Objectives = () => {
   return (
     <section className="max-w-[1440px]">
       <Heading
-        className="mb-10 text-blackText text-5xl font-extrabold text-center"
+        className="mb-10  text-5xl font-extrabold text-center"
         text="Objectives"
       />
       <div className="flex flex-row flex-wrap items-center justify-center gap-6">
         {objectives.map((obj, index) => (
           <div
             key={index}
-            className="bg-white shadow-md rounded-lg p-6 max-w-sm text-center h-60 w-90 flex flex-col justify-center "
+            className="bg-[#333333] shadow-md shadow-gray-500 rounded-lg p-6 max-w-sm text-center h-60 w-90 flex flex-col justify-center "
           >
             <h3 className="text-2xl font-semibold mb-4 text-green-600">
               {obj.title}
             </h3>
-            <p className="text-gray-600 ">{obj.text}</p>
+            <p className="text-gray-300 ">{obj.text}</p>
           </div>
         ))}
       </div>

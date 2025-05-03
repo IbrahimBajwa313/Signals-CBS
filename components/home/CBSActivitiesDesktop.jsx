@@ -55,11 +55,11 @@ const CBSActivitiesDesktop = () => {
   return (
     <section className="w-full max-w-[1000px] mx-auto px-4 py-10 hidden sm:block">
       <Heading
-        className="mb-10 text-blackText text-5xl font-extrabold text-center"
+        className="mb-10 text-5xl font-extrabold text-center"
         text="CBS Activities"
       />
       {/* Main container */}
-      <div className="flex flex-col gap-16 text-blackText flex-1">
+      <div className="flex flex-col gap-16 flex-1">
         {activities.map((activity, index) => (
           // Row
           <div
@@ -69,11 +69,11 @@ const CBSActivitiesDesktop = () => {
             }`}
           >
             {/* Content Container */}
-            <div className="bg-white shadow-md rounded-lg p-6 max-w-lg text-center h-60 w-90 flex flex-col justify-center flex-grow">
+            <div className="bg-[#333333]  rounded-lg p-6 max-w-lg text-center h-60 w-90 flex flex-col justify-center flex-grow">
               <h3 className="text-2xl font-semibold mb-4 text-green-600">
                 {activity.title}
               </h3>
-              <p className="text-gray-600">{activity.content}</p>
+              <p className="text-gray-300">{activity.content}</p>
             </div>
 
             {/* Image Container */}

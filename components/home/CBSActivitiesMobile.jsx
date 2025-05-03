@@ -58,12 +58,12 @@ const CBSActivitiesMobile = () => {
         text="CBS Activities"
       />
       {/* Main container */}
-      <div className="flex flex-col gap-16 text-blackText flex-1">
+      <div className="flex flex-col gap-16 flex-1">
         {activities.map((activity, index) => (
           // Activity
           <div
             key={index}
-            className={`flex flex-col items-center justify-center w-full bg-white shadow-md rounded-lg`}
+            className={`flex flex-col items-center justify-center w-full bg-[#333333] shadow-md rounded-lg`}
           >
             {/* Head Container */}
             <div className="flex items-centerjustify-center gap-4 px-4 pt-4 pb-2">
@@ -80,7 +80,7 @@ const CBSActivitiesMobile = () => {
             </div>
             {/* Content Container */}
             <div className="px-4 pt-2 pb-4 max-w-lg text-center flex flex-col justify-center flex-grow">
-              <p className="text-gray-600">{activity.content}</p>
+              <p className="text-gray-300">{activity.content}</p>
             </div>
           </div>
         ))}
