@@ -127,10 +127,7 @@ export default function Header() {
         </nav>
         {/* Join Us Button */}
         <Link
-          href={whatsappLink}
-          legacyBehavior
-          target="_blank"
-          rel="noopener noreferrer"
+          href="joinus"
         >
           <button className="hidden md:flex bg-white hover:bg-green-500 hover:text-white rounded-full text-black px-6 py-2  transition-colors duration-300">
             Join Us
